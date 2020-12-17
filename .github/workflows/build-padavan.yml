@@ -41,7 +41,7 @@ jobs:
         TNAME: R2100
       run: |
         cd /opt/rt-n56u/trunk
-        if [ ! -f configs/templates/R2100.config ] ; then
+        if [ ! -f configs/templates/$TNAME.config ] ; then
         echo "configs/templates/PSG1218.config not found "
         exit 1
         fi
